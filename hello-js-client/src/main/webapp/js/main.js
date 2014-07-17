@@ -14,6 +14,8 @@ define([
     var rootRef = ankorClient.getRef("root");
     
     rootRef.addPropChangeListener(function() {
+        document.getElementById("loading").style.display = 'none';
+        
         var helloWorldRef = rootRef.appendPath("helloWorld");
         var countRef = rootRef.appendPath("count");
 
