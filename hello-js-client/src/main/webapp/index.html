@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Hello Ankor JS Client</title>
+</head>
+<body>
+<input type="text" id="helloWorld" value="Hello World" style="display:none"/>
+<label for="helloWorld" id="count" style="display:none">0</label>
+<script src="bower_components/requirejs/require.js"></script>
+<script>
+    require.config({
+        baseUrl: "js"
+    });
+    require(["main"]);
+</script>
+</body>
+</html>
