@@ -7,7 +7,7 @@
     <groupId>io.ankor.samples.helloankor</groupId>
     <artifactId>hello-ankor</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.4-SNAPSHOT</version>
 
     <modules>
         <module>hello-server-viewmodel</module>
@@ -15,24 +15,26 @@
         <module>hello-socket-server</module>
         <module>hello-websocket-fx-client</module>
         <module>hello-websocket-server</module>
+        <module>hello-websocket-springboot-server</module>
         <module>hello-js-client</module>
     </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <ankor.version>0.4-SNAPSHOT</ankor.version>
     </properties>
 
-    <!--<dependencyManagement>
+    <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>at.irian.ankor</groupId>
                 <artifactId>ankor-bom</artifactId>
-                <version>0.3.0</version>
+                <version>${ankor.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
         </dependencies>
-    </dependencyManagement>-->
+    </dependencyManagement>
 
     <repositories>
         <repository>
